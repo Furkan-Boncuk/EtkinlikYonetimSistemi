@@ -18,7 +18,7 @@ Proje, Nesne Yönelimli Programlama prensiplerini uygulayan bir konsol uygulamas
 
 Projeyi çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 1. Komutları girmek için terminal ekranını açın ve `cd <dosya_adi>` komutuyla ilgili klasöre geçin.
-2. Projeyi klonlayın: `[git clone https://github.com/sizin-kullanıcı-adınız/etkinlik-yönetim-sistemi.git](https://github.com/Furkan-Boncuk/c-code.git)`
+2. Projeyi klonlayın: `https://github.com/Furkan-Boncuk/c-code.git`
 3. Uygulamayı derleyip çalıştırın.
 
 ## Proje Detayları
