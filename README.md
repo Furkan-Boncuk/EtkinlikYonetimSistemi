@@ -8,6 +8,7 @@ Proje, Nesne Yönelimli Programlama prensiplerini uygulayan bir konsol uygulamas
 - **Oturum Yönetimi:** Kullanıcı hesapları Organizasyon ve Katılımcı olmak üzere ikiye ayrılır. Kullanıcının seçimine göre oturum sağlanır. Oturum bilgilerini korumak için bir obje tutulur ve oturum sonlandırıldığında da bu obje temizlenir. Bu sayede katılımcı veya organizasyon hesapları arasında geçiş yapılması sağlanır.
 - **Katılımcılar İçin Etkinlik İşlemleri:** Katılımcılar, Organizasyonlar tarafınfan düzenlenen tüm etkinlikleri görebilir, bir etkinliğin isim veya id bilgisi sayesinde o etkinliğe kaydolabilir ve etkinlik kayıtlarını iptal edebilirler.
 - **Organizasyonlar İçin Etkinlik İşlemleri:** Organizasyonlar, tüm etkinlikleri görüntüleyebilir, kendi oluşturduğu etkinlikleri görüntüleyebilir, yeni etkinlikler oluşturup kaydedebilir, oluşturduğu etkinlikleri silebilir, oluşturduğu etkinliğe katılım sağlayacak kullanıcıların bir listesini görüntüleyebilirler.
+- **Hata Yönetimi:** Proje içerisinde hata durumlarını yönetmek, olası hatalarda uygulamanın çökmesini engellemek için `try-catch blokları`ndan faydalanıldı ve kullanıcıya daha iyi bir deneyim sunmak için hata durumlarında açıklayıcı uyarı mesajları verildi.
 
 ## Gereksinimler
 
@@ -37,16 +38,3 @@ Proje, OOP prensiblerine uygun hazırlanmıştır :
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
- Temel varlıklar arasında `User`, `Participant`, `Organization` ve `Event` bulunmaktadır.
