@@ -36,5 +36,50 @@ Proje, OOP prensiblerine uygun hazırlanmıştır :
 
 ## Proje Ekran Görüntüleri 
 
+(Konsol üzerinde projenin bazı ekran görüntüleri aşağıda derlenmiştir.)
+
+![1](https://github.com/Furkan-Boncuk/c-code/assets/114020260/1050dbfb-3803-4085-b9d8-9564ea4bbf5e)
+
+![2](https://github.com/Furkan-Boncuk/c-code/assets/114020260/039bea4e-bed1-48f1-9ae1-f6b171c85d88)
+
+![3](https://github.com/Furkan-Boncuk/c-code/assets/114020260/054c087d-9548-491c-a0d7-a5740ea86cb9)
+
+![4](https://github.com/Furkan-Boncuk/c-code/assets/114020260/d01a7724-5cb2-4855-925f-bda0f84d92e0)
+
+![4](https://github.com/Furkan-Boncuk/c-code/assets/114020260/99dfbdbe-945e-4b4c-b328-076e4de9eb48)
+
+![6](https://github.com/Furkan-Boncuk/c-code/assets/114020260/98740ea1-0883-47fd-8ff7-5c9cb5cffc49)
+
+![7](https://github.com/Furkan-Boncuk/c-code/assets/114020260/28943975-ca9f-4170-9703-1d9b4c9ccfc6)
+
+![8](https://github.com/Furkan-Boncuk/c-code/assets/114020260/e6acc230-0dbe-4ab3-b0c8-d8b060eb60c7)
+
+![9](https://github.com/Furkan-Boncuk/c-code/assets/114020260/b8e02437-5118-4feb-81b1-dd782a2d564b)
+
+![10](https://github.com/Furkan-Boncuk/c-code/assets/114020260/0d74b85f-cfcf-481b-b8a0-1092a5443456)
+
+![11](https://github.com/Furkan-Boncuk/c-code/assets/114020260/17c9e36a-6f4a-47f3-b382-0adf2d0695e5)
+
+![12](https://github.com/Furkan-Boncuk/c-code/assets/114020260/c06b69c0-c472-4405-8709-e079e32d207b)
+
+![13](https://github.com/Furkan-Boncuk/c-code/assets/114020260/94e54dca-ecfb-4874-926d-f8d3861d98eb)
+
+![14](https://github.com/Furkan-Boncuk/c-code/assets/114020260/dab14138-a00a-42f7-863b-17ca26b660b0)
+
+![15](https://github.com/Furkan-Boncuk/c-code/assets/114020260/a8df689c-16cc-43e0-82bb-bbc3246184c1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
