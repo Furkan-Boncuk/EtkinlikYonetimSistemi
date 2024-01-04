@@ -3,12 +3,13 @@ namespace EventManagementSystem
     class Program
     {
         public static void Main(string[] args) {
-
+            // Etkinliklerin tutulacağı listeyi oluştur.
             List<Event> Events = new List<Event>();
 
+            // Event nesnesi oluştur
             Event event1 = new Event(
                 "Etkinlik1",
-                new DateTime(2023, 12, 31, 18, 30, 0), // Example: EventDate (year, month, day, hour, minute, second)
+                new DateTime(2023, 12, 31, 18, 30, 0),
                 "Açıklama1",
                 "Konum1",
                 "Konferans",
@@ -18,9 +19,10 @@ namespace EventManagementSystem
                 3
             );
 
+            // Event nesnesi oluştur
             Event event2 = new Event(
                 "Etkinlik2",
-                new DateTime(2023, 12, 31, 18, 30, 0), // Example: EventDate (year, month, day, hour, minute, second)
+                new DateTime(2023, 12, 31, 18, 30, 0), 
                 "Açıklama2",
                 "Konum2",
                 "Spor",
@@ -32,7 +34,7 @@ namespace EventManagementSystem
 
             Event event3 = new Event(
                 "Etkinlik3",
-                new DateTime(2023, 12, 31, 18, 30, 0), // Example: EventDate (year, month, day, hour, minute, second)
+                new DateTime(2023, 12, 31, 18, 30, 0), 
                 "Açıklama3",
                 "Konum3",
                 "Söyleşi",
@@ -474,11 +476,12 @@ namespace EventManagementSystem
         public string Username { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public bool isUserAuthenticated { get; set; } // oturum açılmış mı?
+        public bool isUserAuthenticated { get; set; } // kullanıcı oturum açmış mı?
 
         // yapıcı blok
         public User(string Username, string Email, string Password,bool isUserAuthenticated) 
         {
+            // C# Random kütüphanesinden random bir sayı alıp Id değişkenine atıyor.
             Id = new Random().Next();
             this.Username = Username;   
             this.Email = Email;
@@ -602,22 +605,26 @@ namespace EventManagementSystem
         }
     }
 
+    // Organizasyon hesapları için bir sınıf
     class Organization : User, IOrganizationEvent
     {
+        // özellikler
         public string OrganizationName { get; set; }
-        public List<Event> EventListOfTheOrganization { get; set; } // organizasyonun eventlerinin listesi
+        public List<Event> EventListOfTheOrganization { get; set; } // organizasyonun etkinliklerinin listesi
 
+        // yapıcı blok
         public Organization(string Username, string Email, string Password, string OrganizationName, bool isUserAuthenticated)
-            : base(Username, Email, Password, isUserAuthenticated)
+            : base(Username, Email, Password, isUserAuthenticated) // User sınıfından aldığımız özellikler
         {
             this.OrganizationName = OrganizationName;
             EventListOfTheOrganization = new List<Event>(); // nesne oluşturulurken listeyi de oluştur.
         }
         
-        // implemente edilen metotlar
+        // interface'ten implemente edilen metotlar
         public void DisplayAllEvents(List<Event> Events)
         {
             ConsoleDesign.TextInTheMiddleOfRectangleConsoleDesign("ETKİNLİKLER");
+            // Events listesindeki elemanları dolaşıyor. Her bir etkinlik için ekrana bilgileri yazdırıyor.
             foreach(var eventItem in Events)
             {
                 Console.WriteLine("   "+eventItem.EventName + " (" + eventItem.Id + ")");
@@ -734,6 +741,7 @@ namespace EventManagementSystem
 
     class Event
     { 
+        // yapıcı blok
         public Event(string EventName, DateTime EventDate, string EventDescription, string EventLocation, string EventType, bool isEventCertified, 
             string EventHostOrganization, string EventContact, int EventCapacity) 
         {
@@ -750,6 +758,7 @@ namespace EventManagementSystem
             EventParticipantList = new List<Participant>(); // nesne oluşturulurken listeyi de oluştur.
         }
 
+        // etkinliğin özellikleri => kapsülleme (get; set;)
         public int Id { get; set; }
         public string EventName { get; set; } 
         public DateTime EventDate { get; set; } 
@@ -763,10 +772,11 @@ namespace EventManagementSystem
         public int EventCapacity { get; set; }
     }
 
+    // Organization sınıfında kullanılacak metotları tutan interface.
     interface IOrganizationEvent
     {
-        public void DisplayAllEvents(List<Event> Events){}
-        public void CreateNewEvent(Event eventBody, List<Event> Events);
+        public void DisplayAllEvents(List<Event> Events){} // tüm etkinlikleri göster
+        public void CreateNewEvent(Event eventBody, List<Event> Events); // yeni etkinlik oluştur.
         public void DisplayEventsOfTheOrganization(List<Event> EventListOfTheOrganization);
         public void RemoveEvent(int eventId, List<Event> Events); // id ye göre event sil.
         public void RemoveEvent(string eventName, List<Event> Events); // isme göre event sil.
