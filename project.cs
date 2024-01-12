@@ -558,8 +558,8 @@ namespace EventManagementSystem
 
             if (foundedEvent != null)
             {
-                participantBody.AttendedEvents.Add(foundedEvent); // Add the event to the participant's event list
-                foundedEvent.EventParticipantList.Add(participantBody); // Add the participant to the event's participant list
+                participantBody.AttendedEvents.Add(foundedEvent); 
+                foundedEvent.EventParticipantList.Add(participantBody); 
                 Console.WriteLine($"\nKatılım sağlandı: {participantBody.Username} - {foundedEvent.EventName}");
             }
             else
@@ -781,7 +781,7 @@ namespace EventManagementSystem
         {
             Id = new Random().Next();
             this.EventName = EventName;
-            this.EventDate = EventDate; // (?)
+            this.EventDate = EventDate; 
             this.EventDescription = EventDescription;
             this.EventLocation = EventLocation;
             this.EventType = EventType;
@@ -827,16 +827,6 @@ namespace EventManagementSystem
         public void CancelAttendingTheEvent(int eventId, Participant participantBody, List<Event> AttendedEvents); // katılımı iptal et.
         public void CancelAttendingTheEvent(string eventName, Participant participantBody, List<Event> AttendedEvents); // katılımı iptal et.
     }
-
-    public enum EventType
-    {
-        Konferans,
-        Online,
-        Konser,
-        Spor,
-        Seminer
-    }
-
     class ConsoleDesign
     {
         public static void TextInTheMiddleOfRectangleConsoleDesign(string text)
