@@ -36,7 +36,7 @@ Proje, OOP prensiblerine uygun hazırlanmıştır :
 
 ## Projenin Mimari Diyagramı
 
-![uml_diagram](https://github.com/Furkan-Boncuk/EtkinlikYonetimSistemi/assets/114020260/90b5eb92-6e4b-494d-84f1-a72789d28001)
+![image](https://github.com/Furkan-Boncuk/EtkinlikYonetimSistemi/assets/114020260/2a0b20c6-512d-450f-b154-ed876c1fb35f)
 
 ## Projenin Ekran Görüntüleri ve Kullanım Senaryoları
 
