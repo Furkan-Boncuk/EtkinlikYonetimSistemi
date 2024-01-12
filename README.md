@@ -34,6 +34,10 @@ Proje, OOP prensiblerine uygun hazırlanmıştır :
    
 4. **Abstraction (Soyutlama):** `IParticipantEvent` ve `IOrganizationEvent` interface'leri, sınıflarda kullanılacak metotları belirleyip tanımlamak ve ortak işlemleri bir çatıda toplayarak soyutlama yapmak için kullanılır.
 
+## Projenin Mimari Diyagramı
+
+![uml_diagram](https://github.com/Furkan-Boncuk/EtkinlikYonetimSistemi/assets/114020260/90b5eb92-6e4b-494d-84f1-a72789d28001)
+
 ## Projenin Ekran Görüntüleri ve Kullanım Senaryoları
 
 (Konsol üzerinde projenin bazı ekran görüntüleri aşağıda derlenmiştir.)
